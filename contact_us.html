@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- To include header and footer-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <title>Online Yog Class</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpeg">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div id="header"></div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron p-5">
+        <h1 class="display-4">Contact Us</h1>
+        <p class="lead">Don't hesitate to get in touch with us either through our contact address or by filling out the
+            form, and we'll be sure to reach out to you.</p>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h4>Contact Information</h4>
+                        <hr>
+                        <dl>
+                            <dt>Call Us</dt>
+                            <dd>
+                                <a href="tel:+919881795173" class="link-primary">+91 9881795173</a>
+                            </dd>
+                            <dt>WhatsApp Us</dt>
+                            <dd>
+                                <a href="https://api.whatsapp.com/send?text=Hi, I would like to learn more about the online yoga classes.&phone=9881795173"
+                                    class="link-primary">+91 9881795173</a>
+                            </dd>
+                            <dt>Email Address</dt>
+                            <dd>
+                                <a href="mailto:madhusudannade@gmail.com"
+                                    class="link-primary">madhusudannade@gmail.com</a>
+                            </dd>
+                            <dt>Address</dt>
+                            <dd>
+                                Pune, Maharashtra.
+                            </dd>
+                            <dt>Social Media</dt>
+                            <dd>
+                                <a href="https://api.whatsapp.com/send?text=Hi, I would like to learn more about the online yoga classes.&phone=9881795173"
+                                class="mr-3" style="color: #7FE817; text-decoration: none;">
+                                    <i class="bi bi-whatsapp"></i>
+                                </a>
+                                <a href="#" class="mr-3" style="color: blue; text-decoration: none;">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                                <a href="#" class="mr-3" style="color: red; text-decoration: none;">
+                                    <i class="bi bi-youtube"></i>
+                                </a>
+                            </dd>
+                        </dl>
+                        <img src="images/img1.jpg" class="img-fluid" alt="Madhusudanji">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card">
+                    <div class="card-body">
+                        <h4>Enquiry Form</h4>
+                        <hr>
+                        <form method="post">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="name" placeholder="name@example.com">
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="phone" placeholder="name@example.com">
+                                <label for="phone">Phone no. (WhatsApp preffered)</label>
+                            </div>
+
+                            <div class="row g-2">
+                                <div class="col-md">
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control" id="height"
+                                            placeholder="name@example.com">
+                                        <label for="height">Height</label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control" id="weight"
+                                            placeholder="name@example.com">
+                                        <label for="weight">Weight</label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-floating mb-3">
+                                        <input type="number" class="form-control" id="age"
+                                            placeholder="name@example.com">
+                                        <label for="age">Age</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row g-2">
+                                <div class="col-md">
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="location"
+                                            placeholder="name@example.com">
+                                        <label for="location">Location</label>
+                                    </div>
+                                </div>
+                                <div class="col-md">
+                                    <div class="form-floating mb-3">
+                                        <select class="form-select" id="batchTime"
+                                            aria-label="Floating label select example">
+                                            <option selected>Select ...</option>
+                                            <option value="1">6:25 AM - 7:20 AM</option>
+                                            <option value="2">7:25 AM - 8:20 AM</option>
+                                        </select>
+                                        <label for="batchTime">Select Batch Timing</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-floating mb-3">
+                                <textarea rows="3" style="height:100%;" class="form-control"
+                                    placeholder="Leave a comment here" id="disorders"></textarea>
+                                <label for="disorders">Any disorders, acute diseases, chronic diseases ? (If not,
+                                    enter NA)</label>
+                            </div>
+
+                            <div class="form-floating mb-5">
+                                <textarea rows="3" style="height:100%;" class="form-control"
+                                    placeholder="Leave a comment here" id="treatment"></textarea>
+                                <label for="treatment">Any ongoing medical treatment ? (If not, enter NA)</label>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="button" class="btn btn-outline-primary w-100"
+                                    onclick="sendEmail()">Register</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+    <script>
+        function whatsapp() {
+            var name = document.getElementById("name").value;
+            var phone = document.getElementById("phone").value;
+            var height = document.getElementById("height").value;
+            var weight = document.getElementById("weight").value;
+            var age = document.getElementById("age").value;
+            var location = document.getElementById("location").value;
+            var batchTime = document.getElementById("batchTime").value;
+            var disorders = document.getElementById("disorders").value;
+            var treatment = document.getElementById("treatment").value;
+
+            var url = "https://wa.me/9881237517?text="
+                + "Hi, I am interested and want to know more about the yog classes, here are my details:" + "%0a"
+                + "Name: " + name + "%0a"
+                + "Phone: " + phone + "%0a"
+                + "Height: " + height + "%0a"
+                + "Weight: " + weight + "%0a"
+                + "Age: " + age + "%0a"
+                + "Location: " + location + "%0a"
+                + "Preferred Batch: " + batchTime + "%0a"
+                + "disorders: " + disorders + "%0a"
+                + "treatment: " + treatment + "%0a"
+
+            window.open(url, '_blank').focus();
+            console.log("Hello World");
+
+        }
+
+        function sendEmail() {
+            var name = document.getElementById("name").value;
+
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "dwm.infodesk@gmail.com",
+                Password: "dwm@12345",
+                To: 'akshaychavanaxy@gmail.com',
+                From: "akshaychavanaxy@gmail.com",
+                Subject: "New Registration",
+                Body: "<html><h3>Name:</h3>" + name + "</html>",
+            }).then(
+                message => alert("mail sent successfully")
+            );
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- To include header and footer-->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+    <title>Online Yog Class</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpeg">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="header"></div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron p-5">
+        <h1 class="display-4">Gallery</h1>
+        <p class="lead">Take a peek into our online yoga classes with this brief glimpse.</p>
+    </div>
+
+    <!-- Images Grid -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        XXX
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        XXX
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        XXX
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card mt-3">
+                    <div class="card-body">
+                        XXX
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <hr>
+    <section id="testimonials">
+        <div class="jumbotron p-5">
+            <h1 class="display-4">Testimonials</h1>
+            <p class="lead">This is what our yogis and yoginis say about us.</p>
+        </div>
+
+        <div class="container">
+            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="card m-3">
+                            <div class="card-body">
+                                card 1
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card m-3">
+                            <div class="card-body">
+                                card 2
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="card m-3">
+                            <div class="card-body">
+                                card 3
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer"></div>
+
+</body>
+
+</html>
